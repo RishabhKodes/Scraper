@@ -11,7 +11,7 @@ request('https://www.webscraper.io/test-sites/e-commerce/allinone', (error, resp
         console.log(siteHeading.text());//to get text in that <div> class
 
         const output = siteHeading.find('h1').text();//to get text from a paticular element "h1"
-        const output = siteHeading.children('h1').text();//to get text from h1 in children elements
+        const output1 = siteHeading.children('h1').text();//to get text from h1 in children elements
 
         $(x).each((i, el) => {      //for looping in an element x and printing all it's attributes
             const item = $(el).text();
@@ -21,7 +21,7 @@ request('https://www.webscraper.io/test-sites/e-commerce/allinone', (error, resp
             console.log(link)
         })
 
-        console.log(output);
+        console.log(output1);
     }
     else{
         console.log(error);
